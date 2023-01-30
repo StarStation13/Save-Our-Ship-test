@@ -58,7 +58,7 @@
 	preferred_direction = 4
 	},
 /obj/machinery/door/airlock/bananium{
-	id_tag = "caravansyndicate1_bolt"
+	id_tag = "goofy_bolt"
 	},
 /obj/effect/mapping_helpers/airlock/locked,
 /obj/structure/fans/tiny,
@@ -81,7 +81,7 @@
 /area/ship/crew/toilet)
 "w" = (
 /obj/structure/fluff/oldturret,
-/turf/closed/wall/mineral/bananium,
+/turf/closed/wall/mineral/wood,
 /area/ship/crew/toilet)
 "C" = (
 /obj/machinery/computer/helm,
