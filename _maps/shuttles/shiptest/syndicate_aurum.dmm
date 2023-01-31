@@ -109,6 +109,9 @@
 	},
 /obj/machinery/power/apc/auto_name/west,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo)
 "gs" = (
@@ -451,6 +454,9 @@
 /obj/item/gps/mining,
 /obj/item/gps/mining,
 /obj/item/gps/mining,
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo)
 "up" = (
@@ -609,6 +615,9 @@
 	dir = 4;
 	pixel_x = -26
 	},
+/obj/structure/cable/yellow{
+	icon_state = "1-4"
+	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo)
 "Ec" = (
@@ -749,6 +758,9 @@
 	locked = 1;
 	dir = 4
 	},
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
 /turf/open/floor/plating,
 /area/ship/cargo)
 "Kv" = (
@@ -813,6 +825,13 @@
 /obj/effect/turf_decal/corner_techfloor_gray/diagonal,
 /obj/machinery/light{
 	dir = 4
+	},
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ship/cargo)
+"Ls" = (
+/obj/effect/turf_decal/corner_techfloor_gray/diagonal,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo)
@@ -1081,6 +1100,9 @@
 	locked = 1;
 	dir = 8
 	},
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
 /turf/open/floor/plating,
 /area/ship/cargo)
 "Xk" = (
@@ -1133,6 +1155,16 @@
 /obj/item/clothing/mask/gas/syndicate,
 /obj/effect/turf_decal/corner_techfloor_gray/diagonal,
 /obj/machinery/airalarm/directional/east,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ship/cargo)
+"ZL" = (
+/obj/effect/turf_decal/corner_techfloor_gray/diagonal,
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-4"
+	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo)
 "ZM" = (
@@ -1413,8 +1445,8 @@ qB
 Sh
 Sh
 RK
-nj
-nj
+ZL
+Ls
 gb
 EY
 PM
