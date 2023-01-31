@@ -457,6 +457,8 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
 	},
+/obj/item/pickaxe,
+/obj/item/pickaxe,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo)
 "up" = (
