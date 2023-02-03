@@ -198,7 +198,12 @@
 	input_dir = 2;
 	output_dir = 1
 	},
-/obj/structure/fans/tiny,
+/obj/machinery/power/shieldwallgen/atmos/roundstart{
+	id = "wingsmasher_holofields_starboard";
+	locked = 1;
+	dir = 8
+	},
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/ship/cargo/starboard)
 "cf" = (
@@ -353,10 +358,18 @@
 "dO" = (
 /obj/effect/turf_decal/road/stripes,
 /obj/machinery/smartfridge/chemistry/preloaded,
-/obj/machinery/door/poddoor/preopen{
-	id = "medbay_wingsmasher"
+/obj/machinery/door/poddoor{
+	id = "medbay_wingsmasher";
+	name = "Medical Bay"
 	},
-/obj/structure/fans/tiny,
+/obj/machinery/power/shieldwallgen/atmos/roundstart{
+	id = "wingsmasher_holofields_port";
+	locked = 1;
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
 /turf/open/floor/plating,
 /area/ship/medical)
 "ef" = (
@@ -434,6 +447,9 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "fK" = (
@@ -450,6 +466,14 @@
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/hallway/fore)
+"go" = (
+/obj/effect/turf_decal/corner_techfloor_grid/diagonal,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/cargo/starboard)
 "gq" = (
 /obj/structure/closet/wall/red{
 	name = "Captain's Locker";
@@ -595,6 +619,24 @@
 /area/ship/medical)
 "iL" = (
 /obj/effect/turf_decal/corner/transparent/bottlegreen,
+/turf/open/floor/plasteel,
+/area/ship/medical)
+"iT" = (
+/obj/effect/turf_decal/corner/transparent/bottlegreen{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
 /turf/open/floor/plasteel,
 /area/ship/medical)
 "ji" = (
@@ -769,7 +811,6 @@
 /obj/effect/turf_decal/road/stripes{
 	dir = 1
 	},
-/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/ship/cargo/starboard)
 "nN" = (
@@ -954,6 +995,9 @@
 /obj/effect/turf_decal/corner_techfloor_grid/diagonal,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/layer_manifold,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo/starboard)
 "rk" = (
@@ -1225,6 +1269,9 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "uN" = (
@@ -1469,19 +1516,27 @@
 "zk" = (
 /obj/effect/turf_decal/road/stripes,
 /obj/machinery/chem_dispenser,
-/obj/machinery/door/poddoor/preopen{
-	id = "medbay_wingsmasher"
+/obj/machinery/door/poddoor{
+	id = "medbay_wingsmasher";
+	name = "Medical Bay"
 	},
-/obj/structure/fans/tiny,
+/obj/machinery/power/shieldwallgen/atmos/roundstart{
+	id = "wingsmasher_holofields_port";
+	locked = 1;
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
 /turf/open/floor/plating,
 /area/ship/medical)
 "zt" = (
 /obj/effect/turf_decal/road/stripes,
 /obj/machinery/chem_master,
-/obj/machinery/door/poddoor/preopen{
-	id = "medbay_wingsmasher"
+/obj/machinery/door/poddoor{
+	id = "medbay_wingsmasher";
+	name = "Medical Bay"
 	},
-/obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/ship/medical)
 "zu" = (
@@ -1605,6 +1660,9 @@
 	},
 /obj/effect/decal/cleanable/oil,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo/starboard)
 "AR" = (
@@ -1739,6 +1797,12 @@
 /obj/effect/turf_decal/corner_techfloor_grid/diagonal,
 /obj/machinery/ore_silo,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/button/shieldwallgen{
+	dir = 1;
+	id = "wingsmasher_holofields_starboard";
+	pixel_x = 10;
+	pixel_y = -24
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo/starboard)
 "CB" = (
@@ -1834,6 +1898,24 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
+"Fr" = (
+/obj/effect/turf_decal/corner/transparent/bottlegreen{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/open/floor/plasteel,
+/area/ship/medical)
 "Fu" = (
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 8;
@@ -1849,6 +1931,9 @@
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "Fz" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel,
 /area/ship/medical)
 "FM" = (
@@ -2367,6 +2452,9 @@
 "Ok" = (
 /obj/machinery/chem_heater,
 /obj/effect/turf_decal/corner/transparent/bottlegreen,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel,
 /area/ship/medical)
 "Ot" = (
@@ -2398,6 +2486,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo/starboard)
@@ -2527,6 +2618,11 @@
 	id = "medbay_wingsmasher";
 	name = "cargobay doors";
 	pixel_y = 27
+	},
+/obj/machinery/button/shieldwallgen{
+	id = "wingsmasher_holofields_port";
+	pixel_x = 10;
+	pixel_y = 24
 	},
 /turf/open/floor/plasteel,
 /area/ship/medical)
@@ -2697,6 +2793,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 4
 	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo/starboard)
 "Ty" = (
@@ -2826,7 +2925,12 @@
 /obj/machinery/atmospherics/components/binary/pump/on/layer2{
 	name = "Scrubber Waste"
 	},
-/obj/structure/fans/tiny,
+/obj/machinery/power/shieldwallgen/atmos/roundstart{
+	id = "wingsmasher_holofields_starboard";
+	locked = 1;
+	dir = 4
+	},
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/ship/cargo/starboard)
 "Vp" = (
@@ -2934,6 +3038,9 @@
 /obj/effect/decal/cleanable/oil/streak,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/dark/hidden/layer1,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo/starboard)
 "XX" = (
@@ -2969,11 +3076,11 @@
 /area/ship/bridge)
 "Zd" = (
 /obj/effect/turf_decal/road/stripes,
-/obj/machinery/door/poddoor/preopen{
-	id = "medbay_wingsmasher"
-	},
 /obj/structure/table/reinforced,
-/obj/structure/fans/tiny,
+/obj/machinery/door/poddoor{
+	id = "medbay_wingsmasher";
+	name = "Medical Bay"
+	},
 /turf/open/floor/plating,
 /area/ship/medical)
 "Zm" = (
@@ -3248,7 +3355,7 @@ ji
 pX
 zk
 Ok
-iJ
+iT
 uF
 mN
 fE
@@ -3305,7 +3412,7 @@ sa
 pX
 dO
 Fz
-iJ
+Fr
 xR
 mN
 TW
@@ -3315,7 +3422,7 @@ AK
 NF
 ji
 Tw
-OT
+go
 AO
 bX
 hG
