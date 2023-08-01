@@ -558,18 +558,33 @@ update_label()
 
 /obj/item/card/id/syndicate_command/crew_id
 	assignment = "Operative"
-	access = list(ACCESS_SYNDICATE, ACCESS_ROBOTICS)
+	access = list(ACCESS_SYNDICATE)
 	uses_overlays = FALSE
 
-/obj/item/card/id/syndicate_command/operative
-	assignment = "Operative"
-	access = list(ACCESS_SYNDICATE, ACCESS_ROBOTICS, ACCESS_ARMORY)
+/obj/item/card/id/syndicate_command/crew_id/engi // twinkleshine specific IDs
+	assignment = "Engineer"
+	access = list(ACCESS_SYNDICATE, ACCESS_ENGINE, ACCESS_CONSTRUCTION)
+	uses_overlays = FALSE
+
+/obj/item/card/id/syndicate_command/crew_id/med
+	assignment = "Medic"
+	access = list(ACCESS_SYNDICATE, ACCESS_MEDICAL)
+	uses_overlays = FALSE
+
+/obj/item/card/id/syndicate_command/lieutenant
+	assignment = "Lieutenant"
+	access = list(ACCESS_SYNDICATE, ACCESS_ARMORY)
 	uses_overlays = FALSE
 
 /obj/item/card/id/syndicate_command/captain_id
 	assignment = "Captain"
 	access = list(ACCESS_SYNDICATE, ACCESS_ROBOTICS, ACCESS_ARMORY, ACCESS_SYNDICATE_LEADER)
 	uses_overlays = FALSE
+
+/obj/item/card/id/patient //Aegis ID
+	assignment = "Long Term Patient"
+	uses_overlays = FALSE
+	access = list(ACCESS_SYNDICATE)
 
 /obj/item/card/id/captains_spare
 	desc = "The spare ID of the High Lord himself."
@@ -818,11 +833,6 @@ update_label()
 	name = "\improper SolGov ID"
 	desc = "A SolGov ID with no proper access to speak of. This one indicates a Commander."
 	assignment = "Commander"
-
-/obj/item/card/id/solgov/elite
-	name = "\improper SolGov ID"
-	desc = "A SolGov ID with no proper access to speak of. This one indicates an Elite."
-	assignment = "Elite"
 
 /obj/item/card/id/away/slime //We're ranchin, baby! //It's slimin time
 	name = "\improper Slime Lab access card"

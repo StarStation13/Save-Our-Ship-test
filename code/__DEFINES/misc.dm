@@ -1,17 +1,3 @@
-// Byond direction defines, because I want to put them somewhere.
-// #define NORTH 1
-// #define SOUTH 2
-// #define EAST 4
-// #define WEST 8
-
-#define TEXT_NORTH "[NORTH]"
-#define TEXT_SOUTH "[SOUTH]"
-#define TEXT_EAST "[EAST]"
-#define TEXT_WEST "[WEST]"
-
-/// Inverse direction, taking into account UP|DOWN if necessary.
-#define REVERSE_DIR(dir) (((dir & 85) << 1) | ((dir & 170) >> 1))
-
 //Human Overlays Indexes/////////
 #define MUTATIONS_LAYER 31 //mutations. Tk headglows, cold resistance glow, etc
 #define HANDS_UNDER_BODY_LAYER 30 //Held items that render underneath the user due to perspective
@@ -28,7 +14,7 @@
 #define GLOVES_LAYER 19
 #define SHOES_LAYER 18
 #define EARS_LAYER 17
-#define SPLINT_LAYER 16 //WS Edit - breakable bones
+#define SPLINT_LAYER 16
 #define SUIT_LAYER 15
 #define GLASSES_LAYER 14
 #define BELT_LAYER 13 //Possible make this an overlay of somethign required to wear a belt?
@@ -124,12 +110,11 @@
 GLOBAL_LIST_EMPTY(bloody_footprints_cache)
 
 //Bloody shoes/footprints
-#define MAX_SHOE_BLOODINESS 100
-#define BLOODY_FOOTPRINT_BASE_ALPHA 150
-#define BLOOD_GAIN_PER_STEP 100
-#define BLOOD_LOSS_PER_STEP 5
-#define BLOOD_LOSS_IN_SPREAD 20
-#define BLOOD_AMOUNT_PER_DECAL 20
+#define BLOODY_FOOTPRINT_BASE_ALPHA 80 /// Minimum alpha of footprints
+#define BLOOD_AMOUNT_PER_DECAL 50 /// How much blood a regular blood splatter contains
+#define BLOOD_ITEM_MAX 200 /// How much blood an item can have stuck on it
+#define BLOOD_POOL_MAX 300 /// How much blood a blood decal can contain
+#define BLOOD_FOOTPRINTS_MIN 5 /// How much blood a footprint need to at least contain
 
 //Bloody shoe blood states
 #define BLOOD_STATE_HUMAN "blood"
@@ -434,6 +419,7 @@ GLOBAL_LIST_INIT(pda_styles, sortList(list(MONO, VT, ORBITRON, SHARE)))
 #define GAUSSIAN_BLUR(filter_size) filter(type="blur", size=filter_size)
 
 #define STANDARD_GRAVITY 1 //Anything above this is high gravity, anything below no grav
+#define GAS_GIANT_GRAVITY 2
 #define GRAVITY_DAMAGE_TRESHOLD 3 //Starting with this value gravity will start to damage mobs
 
 #define CAMERA_NO_GHOSTS 0
