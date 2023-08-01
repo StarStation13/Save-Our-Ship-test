@@ -143,7 +143,7 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 1
 	},
-/obj/item/radio/intercom/wideband,
+/obj/item/radio/intercom/wideband/directional/north,
 /turf/open/floor/plasteel/tech,
 /area/ship/construction)
 "J" = (
@@ -162,7 +162,7 @@
 /area/ship/construction)
 "S" = (
 /obj/structure/window/reinforced/spawner,
-/obj/machinery/power/apc/auto_name/west,
+/obj/machinery/power/apc/auto_name/directional/west,
 /obj/structure/cable,
 /turf/open/floor/plasteel/tech,
 /area/ship/construction)
@@ -200,11 +200,7 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/obj/machinery/computer/cryopod{
-	pixel_y = -22;
-	dir = 1;
-	pixel_x = -3
-	},
+/obj/machinery/computer/cryopod/directional/south,
 /turf/open/floor/plasteel/tech,
 /area/ship/construction)
 
