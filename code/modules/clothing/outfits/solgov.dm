@@ -126,7 +126,7 @@
 	uniform = /obj/item/clothing/under/solgov/formal
 	accessory = /obj/item/clothing/accessory/armband/medblue
 	shoes = /obj/item/clothing/shoes/laceup
-	head = /obj/item/clothing/head/soft/solgov
+	head = /obj/item/clothing/head/solgov_surgery
 	suit =  /obj/item/clothing/suit/solgov/jacket
 	l_hand = /obj/item/storage/firstaid/medical
 
@@ -160,6 +160,33 @@
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	duffelbag = /obj/item/storage/backpack/duffelbag
 	box = /obj/item/storage/box/survival/mining
+
+/datum/outfit/job/solgov/psychologist
+	name = "Psychologist (SolGov)"
+	jobtype = /datum/job/psychologist
+
+	head = /obj/item/clothing/head/fedora/solgov
+	suit = /obj/item/clothing/suit/solgov/suit
+	ears = /obj/item/radio/headset/headset_srvmed
+	uniform = /obj/item/clothing/under/solgov/formal
+	shoes = /obj/item/clothing/shoes/laceup
+	id = /obj/item/card/id
+	belt = /obj/item/pda/medical
+	pda_slot = ITEM_SLOT_BELT
+	l_hand = /obj/item/clipboard
+
+	backpack = /obj/item/storage/backpack/medic
+	satchel = /obj/item/storage/backpack/satchel/med
+	duffelbag = /obj/item/storage/backpack/duffelbag/med
+
+/datum/outfit/job/solgov/patient
+	name = "Attentive Care Patient (SolGov)"
+	jobtype = /datum/job/prisoner
+
+	id = /obj/item/card/id/patient
+	uniform = /obj/item/clothing/under/rank/medical/gown
+	alt_suit = null
+	shoes = /obj/item/clothing/shoes/sandal/slippers
 
 /datum/outfit/job/solgov/engineer
 	name = "Ship Engineer (SolGov)"
